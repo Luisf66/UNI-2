@@ -1,24 +1,12 @@
-function Home() {
+import { Receita1_implementacao } from './Receita1.js';
+
+function Principal() {
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Coluna 1</th>
-                    <th>Coluna 2</th>
-                    <th>Coluna 3</th>
-                    <th>Coluna 4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Info 1</td>
-                    <td>Info 2</td>
-                    <td>Info 3</td>
-                    <td>Info 4</td>
-                </tr>
-            </tbody>
-        </table>
+        <div>
+            <h1>Links das receitas</h1>
+            <a href="/Receita1">Ver Receita 1</a>
+        </div>
     )
 }
 
-export default Home
+export default Principal
