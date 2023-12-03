@@ -1,4 +1,4 @@
-export function Imagem () {
+export default function Imagem () {
     return (
         <div>
             <p>Teste de Imagem importada</p>
