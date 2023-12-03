@@ -1,4 +1,5 @@
-import { Imagem } from "./imagem.js";
+import { Imagem } from './imagem.js';
+
 export default function Receita2_implementacao() {
     return (
         <div>
