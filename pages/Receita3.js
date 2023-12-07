@@ -28,7 +28,7 @@ export default function Receita3_implementacao({ data }) {
 }
 
 export async function getServerSideProps(context) {
-    let res = await fetch(`http://www.omdbapi.com/?apikey=fdb5b2fe&s=bagdad`);
+    let res = await fetch(`https://www.omdbapi.com/?apikey=fdb5b2fe&s=bagdad`);
     const data = await res.json();
     return {
         props: {

@@ -1,6 +1,6 @@
 import useSWR from 'swr'
 export default function Receita4_implementacao() {
-    const { data, error } = useSWR(`http://www.omdbapi.com/?apikey=fdb5b2fe&s=bagdad`, fetcher)
+    const { data, error } = useSWR(`https://www.omdbapi.com/?apikey=fdb5b2fe&s=bagdad`, fetcher)
     if (error) return <div>falha na requisição...</div>
     if (!data) return <div>carregando...</div>
     return (

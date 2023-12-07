@@ -12,7 +12,7 @@ export default function Receita6_implementacao({ initialData }) {
       return
     }
 
-    const res = await fetch(`http://www.omdbapi.com/?apiKey=fdb5b2fe&s=${searchTerm}`)
+    const res = await fetch(`https://www.omdbapi.com/?apiKey=fdb5b2fe&s=${searchTerm}`)
     const searchData = await res.json()
     setData(searchData)
   }
@@ -62,7 +62,7 @@ export default function Receita6_implementacao({ initialData }) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://www.omdbapi.com/?apiKey=fdb5b2fe&s=default`)
+  const res = await fetch(`https://www.omdbapi.com/?apiKey=fdb5b2fe&s=default`)
   const initialData = await res.json()
   return {
     props: {
